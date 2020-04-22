@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+
+{% block title%}Homepage{% endblock%}
+
+{% block body%}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="text-center bg-danger p-2 text-white">Result</h1>
+
+            <div class="data">
+                {% for res in resposts%}
+                    <li><a href="">{{ res.name}}</a></li>
+                {% endfor%}
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center bg-danger p-2 text-white">Admit Card</h1>
+            <div class="data">
+                {% for res in '22222222'%}
+                   <li><a href="">Link 1</a></li>
+                {% endfor%}
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center bg-danger p-2 text-white">Letest Jobs</h1>
+            <div class="data">
+                {% for res in '22222222'%}
+                   <li><a href="">Link 1</a></li>
+                {% endfor%}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock%}
